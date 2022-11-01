@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    background-color: #F6F6F6;
+    color: #161D6F;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 20vh;
+    position: absolute;
+}
+
+header, footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+section {
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.container {
+    padding: 0 10%;
+}
+
+.typed-cursor {
+    font-size: 4rem;
+}
+
+#hero {
+    background: linear-gradient(180deg, rgba(199,255,216,1) 0%, rgba(152,222,217,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero svg {
+    position: absolute;
+    width: 100%;
+    bottom: -40px;
+    z-index: 0;
+}
+
+.hero-text-container {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 6rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.card {
+    background: linear-gradient(180deg, rgba(199,255,216,1) 0%, rgba(152,222,217,1) 100%);
+    padding: 1em;
+    width: 320px;
+    height: 320px;
+    color: #161D6F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.card i {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+
+.card:hover {
+    box-shadow: 12px 12px 0px #C7FFD8;
+}
+
+/* .card-1 {
+    animation-name: card-1-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.card-2 {
+    animation-name: card-2-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.card-3 {
+    animation-name: card-3-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes card-1-animation {
+    0% {
+        margin-bottom: 0em;
+    }
+
+    25% {
+        margin-bottom: 2em;
+        box-shadow: 12px 12px 0px #C7FFD8;
+    }
+
+    50% {
+
+    }
+
+    75% {
+
+    }
+
+    100% {
+        margin-bottom: 0em;
+    }
+}
+
+@keyframes card-2-animation {
+    0% {
+        margin-bottom: 0em;
+    }
+
+    25% {
+
+    }
+
+    50% {
+        margin-bottom: 2em;
+        box-shadow: 12px 12px 0px #C7FFD8;
+    }
+
+    75% {
+        
+    }
+
+    100% {
+        margin-bottom: 0em;
+    }
+}
+
+@keyframes card-3-animation {
+    0% {
+        margin-bottom: 0em;
+    }
+
+    25% {
+
+    }
+
+    50% {
+
+    }
+
+    75% {
+        margin-bottom: 2em;
+        box-shadow: 12px 12px 0px #C7FFD8;
+    }
+
+    100% {
+        margin-bottom: 0em;
+    }
+} */
+
+.card h3 {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+@keyframes arrow-animation {
+    0% {
+        bottom: 4em;
+    }
+
+    50% {
+        bottom: 2em;
+    }
+
+    100% {
+        bottom: 4em;
+    }
+}
+
+.card-container {
+    width: 100%;
+    gap: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 1em;
+}
+
+.group-link {
+    display: flex;
+    gap: 2em;
+    margin-top: 4em;
+}
+
+.link {
+    background-color: saddlebrown;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+}
+
+.btn-down {
+    position: absolute;
+    font-size: 2rem;
+    color: #161D6F;
+    z-index: 1;
+    animation-name: arrow-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+footer {
+    height: 10vh;
+    justify-content: center;
+    position: absolute;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .container {
+        padding: 0 5%;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    #hero svg {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+}
